@@ -4,14 +4,22 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // You can test your method here
-    // System.out.println(isPrime(1));
-    // System.out.println(isPrime(17));
-  }
+    Scanner sc = new Scanner(System.in);
+    
+    //prob1:
+    int count = 0;
+    String word = sc.nextLine();
+    word = word.toLowerCase();
+    for (int i = 0; i < word.length()-1; i++){
+      String letters = word.substring(i, i+2);
+      if (letters.equals("pa") || letters.equals("pe") || letters.equals("po") || letters.equals("pu") || letters.equals("pi")){
+        count++;
+      }
+    }
+    System.out.println(count);
 
-  public static boolean isPrime(int N)
-  {
-    // TODO: Replace and write your code below
-    return false;
+    //prob2:
+
   }
 }
+
