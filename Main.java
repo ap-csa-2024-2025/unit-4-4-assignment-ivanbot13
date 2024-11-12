@@ -38,6 +38,11 @@ public class Main
     System.out.println(newWord);
 
     //prob3:
+    String s1 = "balloon";
+    String s2 = "atrophy";
+    if (s1.compareTo(s2) == 0){
+      System.out.println("error"); //if not same length, print error
+    }
     
   }
 }
