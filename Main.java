@@ -40,10 +40,17 @@ public class Main
     //prob3:
     String s1 = "balloon";
     String s2 = "atrophy";
-    if (s1.compareTo(s2) == 0){
-      System.out.println("error"); //if not same length, print error
+    String output = "";
+    if (s1.length() == s2.length()){
+      for (int i = s1.length()-1; i >= 0; i--){
+        output += (s2.substring(i, i+1) + s1.substring(i, i+1));
+      }
     }
-    
+    else {
+      System.out.println("error");
+    }
+      System.out.println(output);
   }
 }
+
 
